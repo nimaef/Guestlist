@@ -46,12 +46,12 @@
                 <p class="textfield"><textarea class="bg-grey-500" type="textfield" placeholder=" message" /></p>
               </div>
               <div class="grid grid-cols-6">  
-                <div class="optionText2"><a href="/Support"><button class="bg-grey-300 hover:bg-grey-500">Back</button></a></div>
+                <div class=""><a href="/Support"><button class="optionText2 bg-grey-300 hover:bg-grey-500">Back</button></a></div>
                 <p class="optionText1"></p>
                 <div></div>
                 <div class="optionText1"></div>
                 <div class="optionText1"></div>
-                <a href="/feedback"><p class=""><button class="optionText2 bg-grey-300 hover:bg-grey-500">Send Feedback</button></p></a>
+                <p class=""><a href=""><button class="optionText2 bg-grey-300 hover:bg-grey-500">Send Feedback</button></a></p>
                 <div></div>
               </div>
             </div>

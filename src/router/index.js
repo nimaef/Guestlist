@@ -11,6 +11,8 @@ import AccountSettingsView from '../views/AccountSettingsView.vue'
 import accountSettingsEdit from '../views/AccountEditView.vue'
 import FeedbackAndSuppView from '../views/FeedbackAndSuppView.vue'
 import SendFeedbackView from '../views/SendFeedbackView.vue'
+import BaseNewEventButton from '../components/UI/BaseNewEventButton.vue'
+import NewEventView from '../views/NewEventView.vue'
 import { data } from 'autoprefixer'
 
 const router = createRouter({
@@ -75,6 +77,11 @@ const router = createRouter({
       path: '/feedback',
       name: 'feedback',
       component: SendFeedbackView
+    },
+    {
+      path: '/NewEvent',
+      name: 'NewEvent',
+      component: NewEventView
     },
 
   ]

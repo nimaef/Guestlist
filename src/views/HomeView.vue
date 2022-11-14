@@ -16,13 +16,8 @@
   <div class="min-h-screen bg-gray-100">
 
     <BaseNavBar></BaseNavBar>
-
-    
-    
-
-
-
     <BaseCard></BaseCard>
+    <BaseNewEventButton></BaseNewEventButton>
 
   </div>
 
@@ -36,6 +31,7 @@ import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 import BaseCard from '../components/UI/BaseCard.vue'
 import BaseNavBar from '../components/UI/BaseNavBar.vue'
+import BaseNewEventButton from '../components/UI/BaseNewEventButton.vue'
 import {
     Dialog,
     DialogPanel,
@@ -54,6 +50,7 @@ export default {
     PopoverPanel,
     BaseCard,
     BaseNavBar,
+    BaseNewEventButton,
     Dialog,
     DialogPanel,
     DialogTitle,
