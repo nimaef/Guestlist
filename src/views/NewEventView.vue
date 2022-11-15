@@ -27,31 +27,26 @@
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <!-- Replace with your content -->
           <div class="px-4 py-8 sm:px-0">
-            <div class="place-content-center h-96 rounded-lg border-4 border-dashed border-gray-200">
-              
+            <div class="height place-content-center rounded-lg border-4 border-dashed border-gray-200">
               <div class="flex grid grid-cols-3">
-                <div>A minimum of a logo and a splash image is required*</div>
-                <div></div>
+                <div class="floatLeft"></div>
+                <div class="title">Add images to your new event</div>
                 <div class="floatRight">* = Required to create an event</div>
               </div>
-              <div class="flex grid grid-cols-6">
+              <div class="pb-20 flex grid grid-cols-3">
+                <div class="LogoInput">Upload Logo:*<input class="" accept="image/png, image/gif, image/jpeg" type="file"></div>
                 <div class=""></div>
-                <div class=""></div>
-                <div class="textSize profileLeft"></div>
+                <div class="LogoInput">Upload Splash image:*<input class="" accept="image/png, image/gif, image/jpeg" type="file"></div>
                 <div></div>
               </div>
-              <div class="flex grid grid-cols-6">
+              <div class="pb-24 flex grid grid-cols-3">
                 <div class=""></div>
-                <div class=""></div>
-                <div class="textSize profileLeft"></div>
+                <div class="Images">Add additional images:<input accept="image/png, image/gif, image/jpeg"  type="file"  /></div>
                 <div></div>
               </div>
-              <div class="flex grid grid-cols-6">
+              <div class=" flex grid grid-cols-3">
                 <div class=""><a href="/"><button class="cancelButton bg-transparent border-black text-blue-700 font-semibold  py-2 px-4 border border-black-500 rounded">Cancel</button></a></div>
                 <div class=""></div>
-                <div class="textSize profileLeft"></div>
-                <div></div>
-                <div></div>
                 <div class=""><a href="/event"><button class="createButton bg-transparent border-black text-blue-700 font-semibold  py-2 px-4 border border-black-500 rounded">Create</button></a></div>
               </div>
             </div>
@@ -111,18 +106,40 @@ export default {
   }
 }
 
-
-
 </script>
 
 <style scoped>
 
+.height{
+  height: 30rem;
+}
+
+.title{
+  font-size: 28px;
+  margin-top: 0.5rem;
+  padding-bottom: 3rem;
+}
+
+.LogoInput{
+  margin-left: 20%;
+  padding: 1rem;
+}
+
+.Images{
+  margin-left: 25%;
+}
 .createButton{
   float: right;
 }
 
 .floatRight{
   float: right;
+  text-align: right;
+  padding: 1rem;
+}
+
+.floatLeft{
+  padding: 1rem;
 }
 
 div{
