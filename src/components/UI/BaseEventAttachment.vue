@@ -12,7 +12,7 @@
               </div>
               <div class="pb-20 flex grid grid-cols-3">
                 <div class="LogoInput"></div>
-                <div class="attachments">Add additional images:<input accept="image/png, image/gif, image/jpeg"  type="file"  /></div>
+                <div class="attachments">Add attachments:<input accept="application/pdf, application/xls"  type="file"  multiple/></div>
                 <div class="LogoInput"></div>
                 <div></div>
               </div>
@@ -42,6 +42,7 @@
 .attachments{
   width: 90%;
   text-align: center;
+  margin-top: 3rem;
 }
 
 .additonalImages{

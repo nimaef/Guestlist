@@ -75,37 +75,7 @@
 
       <BaseEventAttachment></BaseEventAttachment>
 
-      <main>
-        <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <!-- Replace with your content -->
-          <div class="px-4 py-8 sm:px-0">
-            <div class="height place-content-center rounded-lg border-4 border-dashed border-gray-200">
-              <div class="flex grid grid-cols-3">
-                <div class="floatLeft"></div>
-                <div class="title"><p class="locationTitle">Tickets per guest</p></div>
-                <div class="floatRight">* = Required to create an event</div>
-              </div>
-              <div class="pb-20 flex grid grid-cols-3">
-                <div class="LogoInput">Upload Logo:*<input class="" accept="image/png, image/gif, image/jpeg" type="file"></div>
-                <div class=""></div>
-                <div class="LogoInput">Upload Splash image:*<input class="" accept="image/png, image/gif, image/jpeg" type="file"></div>
-                <div></div>
-              </div>
-              <div class="pb-24 flex grid grid-cols-3">
-                <div class=""></div>
-                <div class="Images">Add additional images:<input accept="image/png, image/gif, image/jpeg"  type="file"  /></div>
-                <div></div>
-              </div>
-              <!-- <div class=" flex grid grid-cols-3">
-                <div class=""><a href="/"><button class="cancelButton bg-transparent border-black text-blue-700 font-semibold  py-2 px-4 border border-black-500 rounded">Cancel</button></a></div>
-                <div class=""></div>
-                <div class=""><a href="/event"><button class="createButton bg-transparent border-black text-blue-700 font-semibold  py-2 px-4 border border-black-500 rounded">Create</button></a></div>
-              </div> -->
-            </div>
-          </div>
-          <!-- /End replace -->
-        </div>
-      </main>
+      <BaseEventTickets></BaseEventTickets>
 
       <main>
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -154,6 +124,7 @@ import BaseEventLocation from '../components/UI/BaseEventLocation.vue'
 import BaseEventDate from '../components/UI/BaseEventDate.vue'
 import BaseEventDescription from '../components/UI/BaseEventDescription.vue'
 import BaseEventAttachment from '../components/UI/BaseEventAttachment.vue'
+import BaseEventTickets from '../components/UI/BaseEventTickets.vue'
 import {
     Dialog,
     DialogPanel,
@@ -173,6 +144,7 @@ export default {
     BaseCard,
     BaseEventDate,
     BaseEventDescription,
+    BaseEventTickets,
     BaseEventAttachment,
     BaseNavBar,
     BaseEventLocation,
