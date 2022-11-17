@@ -1,4 +1,5 @@
 <template>
+
 <main>
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <!-- Replace with your content -->
@@ -6,21 +7,30 @@
             <div class="height place-content-center rounded-lg border-4 border-dashed border-gray-200">
               <div class="flex grid grid-cols-3">
                 <div class="floatLeft"></div>
-                <div class="title"><p class="">Add a description*</p></div>
+                <div class="title"><p class="locationTitle">Add attachments</p></div>
                 <div class="floatRight"></div>
               </div>
               <div class="pb-20 flex grid grid-cols-3">
-                <div></div>
-                <div class=""><textarea class="desc" name="description" id="" placeholder="Description" cols="30" rows="10"></textarea></div>
-                <div class=""></div>
+                <div class="LogoInput"></div>
+                <div class="attachments">Add additional images:<input accept="image/png, image/gif, image/jpeg"  type="file"  /></div>
                 <div class="LogoInput"></div>
                 <div></div>
               </div>
+              <div class="pb-24 flex grid grid-cols-3">
+                <div class=""></div>
+
+                <div></div>
+              </div>
+              <!-- <div class=" flex grid grid-cols-3">
+                <div class=""><a href="/"><button class="cancelButton bg-transparent border-black text-blue-700 font-semibold  py-2 px-4 border border-black-500 rounded">Cancel</button></a></div>
+                <div class=""></div>
+                <div class=""><a href="/event"><button class="createButton bg-transparent border-black text-blue-700 font-semibold  py-2 px-4 border border-black-500 rounded">Create</button></a></div>
+              </div> -->
             </div>
           </div>
           <!-- /End replace -->
         </div>
-</main>
+      </main>
 </template>
 
 <script>
@@ -28,6 +38,11 @@
 </script>
 
 <style scoped>
+
+.attachments{
+  width: 90%;
+  text-align: center;
+}
 
 .additonalImages{
   width: 120px;
