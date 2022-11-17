@@ -13,6 +13,7 @@ import FeedbackAndSuppView from '../views/FeedbackAndSuppView.vue'
 import SendFeedbackView from '../views/SendFeedbackView.vue'
 import BaseNewEventButton from '../components/UI/BaseNewEventButton.vue'
 import NewEventView from '../views/NewEventView.vue'
+import twoFacAuthView from '../views/twoFacAuthView.vue'
 import { data } from 'autoprefixer'
 
 const router = createRouter({
@@ -82,6 +83,11 @@ const router = createRouter({
       path: '/NewEvent',
       name: 'NewEvent',
       component: NewEventView
+    },
+    {
+      path: '/2fa',
+      name: '2fa',
+      component: twoFacAuthView
     },
 
   ]

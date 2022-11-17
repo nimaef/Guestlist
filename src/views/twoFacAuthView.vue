@@ -20,7 +20,7 @@
     <div class="py-10">
       <header>
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900">Privacy and Security </h1>
+          <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900">2 Factor Authentication</h1>
         </div>
       </header>
       <main>
@@ -28,25 +28,24 @@
           <!-- Replace with your content -->
           <div class="px-4 py-8 sm:px-0">
             <div class=" h-96 rounded-lg border-4 border-dashed border-gray-200">
-              <div class="grid grid-cols-6">  
+              <div class="grid grid-cols-3">  
                 <div></div>
-                <p class="optionText">Who can see your account?</p>
+                <p class="optionText">enter your 2FA code</p>
                 <div></div>
-                <div class="optionText"><input class="radioButton" name="accountType" type="radio" value="Everyone">Everyone</div>
+              </div>
+              <div class="grid grid-cols-3">  
+                <div></div>
+                <div class="twoFacAuthInput"><input class="alignCenter" type="text" placeholder="2FA code:"></div>
+                <div></div>
+               
                 <div class="optionText"></div>
               </div>
               <div class="grid grid-cols-6">  
                 <div></div>
-                <p class="optionText"></p>
                 <div></div>
-                <div class="optionText"><input class="radioButton" type="radio" name="accountType" value="Everyone">Only me</div>
-                <div class="optionText"></div>
-              </div>
-              <div class="grid grid-cols-6">  
-                <div></div>
-                <p class="optionText1">Enable 2 Factor Auth?</p>
-                <div></div>
-                <div class="optionText1"><input class="radioButton" type="checkbox" value="Everyone"><a href="/2fa"><button class="enableButton">Enable</button></a></div>
+                <p class="optionText1"><a href="/privAndSecSettings"><button class="enableButton">Cancel</button></a></p>
+
+                <div class="optionText1"><a href="/privAndSecSettings"><button class="enableButton">Enable</button></a></div>
                 <div class="optionText"></div>
               </div>
             </div>
@@ -112,6 +111,15 @@ export default {
 
 <style scoped>
 
+.alignCenter{
+  text-align: center;
+}
+
+.twoFacAuthInput{
+margin-top: 3rem;
+text-align: center;
+}
+
 .enableButton{
   color: black;
   border: 2px  solid black;
@@ -127,15 +135,15 @@ export default {
   color: black;
   margin-top: 2rem;
   font-size: 28px;
-  width: 180%;
+  text-align: center;
 }
 
 .optionText1{
   color: black;
   margin-top: 2rem;
   font-size: 28px;
-  width: 180%;
   margin-top: 7vh;
+  text-align: center;
 }
 
 .radioButton{
