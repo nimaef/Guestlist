@@ -7,22 +7,24 @@
         <div class="height place-content-center rounded-lg border-4 border-dashed border-gray-200">
           <div class="flex grid grid-cols-3">
             <div class="floatLeft"></div>
-            <div class="title"><p class="locationTitle">Tickets per guest*</p></div>
+            <div class="title"><p class="locationTitle">Maximum amount of guests*</p></div>
             <div class="floatRight"></div>
           </div>
           <div class="pb-20 flex grid grid-cols-3">
             <div class="LogoInput"></div>
-            <div class="center ">Amount of tickets per guest?<input class="center" type="text" placeholder="Amount:"></div>
+            <div class="center ">Max. amount of guests?<input class="center" type="text" placeholder="Amount:"></div>
           </div>
-          <div class="pb-24 flex grid grid-cols-3">
+          <div class="pb-24 h-20 flex grid grid-cols-3">
             <div class=""></div>
-            <div class="center">Price per ticket?<input class="center" type="text" placeholder="Price:"></div>
+            <div class="center">Do you want to determine who can join?</div>
             <div class="center "></div>
           </div>
-          <div class=" flex grid grid-cols-3">
-            <div class=""></div>
-            <div class=""></div>
-            <div class=""></div>
+          <div class="guestAmount flex grid grid-cols-6">
+            <div></div>
+            <div></div>
+            <div class=""><a href=""><button class="guestButton bg-transparent border-black text-blue-700 font-semibold  py-2 px-4 border border-black-500 rounded">No</button></a></div>
+            <div class=""><a href=""><button class="guestButton bg-transparent border-black text-blue-700 font-semibold  py-2 px-4 border border-black-500 rounded">Yes</button></a></div>
+            <div></div>
           </div>
           <div class=" flex grid grid-cols-3">
             <div class=""></div>
@@ -42,8 +44,17 @@
 
 <style scoped>
 
+.guestAmount{
+  margin-top: -4rem;
+}
+
 .TicketAmount{
   margin-top: -5rem;
+}
+
+.guestButton{
+  display: block;
+  margin: 0 auto 2rem;
 }
 
 .attachments{
@@ -97,8 +108,8 @@
 .Images{
   margin-left: 25%;
 }
-.createButton{
-  float: right;
+.YesButton{
+  text-align: center;
 }
 
 .floatRight{

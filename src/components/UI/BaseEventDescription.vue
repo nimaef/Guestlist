@@ -11,7 +11,7 @@
               </div>
               <div class="pb-20 flex grid grid-cols-3">
                 <div></div>
-                <div class=""><textarea class="desc" name="description" id="" placeholder="Description" cols="30" rows="10"></textarea></div>
+                <div class=""><textarea class="desc" name="description" id="" placeholder="Description:" cols="30" rows="10"></textarea></div>
                 <div class=""></div>
                 <div class="LogoInput"></div>
                 <div></div>
