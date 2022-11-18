@@ -14,6 +14,8 @@ import SendFeedbackView from '../views/SendFeedbackView.vue'
 import BaseNewEventButton from '../components/UI/BaseNewEventButton.vue'
 import NewEventView from '../views/NewEventView.vue'
 import twoFacAuthView from '../views/twoFacAuthView.vue'
+import EditEventSettings from '../views/EditEventSettings.vue'
+import InvitePeople from '../views/InvitePeopleView.vue'
 import { data } from 'autoprefixer'
 
 const router = createRouter({
@@ -88,6 +90,16 @@ const router = createRouter({
       path: '/2fa',
       name: '2fa',
       component: twoFacAuthView
+    },
+    {
+      path: '/EditEvent',
+      name: 'Edit event',
+      component: EditEventSettings
+    },
+    {
+      path: '/InvitePeople',
+      name: 'InvitePeople',
+      component: InvitePeople
     },
 
   ]
