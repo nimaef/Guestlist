@@ -7,28 +7,28 @@
             <div class="height place-content-center rounded-lg border-4 border-dashed border-gray-200">
               <div class="flex grid grid-cols-3">
                 <div class="floatLeft"></div>
-                <div class="title"><p class="locationTitle">Add attachments</p></div>
+                <div class="title"><p class="locationTitle">Invite people</p></div>
                 <div class="floatRight"></div>
               </div>
-              <div class="pb-20 flex grid grid-cols-3">
+              <div class=" pb-5 flex grid grid-cols-3">
                 <div class="LogoInput"></div>
-                <div class="attachments">Click on the icon to add an excel table to invite more people faster:<input accept="application/pdf, application/xls"  type="file"  multiple/></div>
+                <div class="border attachments">Click on the icon to add an excel table to invite more people faster:<input accept="application/pdf, application/xls"  type="file"  multiple/></div>
                 <div class="LogoInput"></div>
                 <div></div>
               </div>
-              <div class="pb-24 flex grid grid-cols-3">
-                <div class=""></div>
+              <div class="pb-5 flex grid grid-cols-3">
+                <div></div>
+                <div class="or">or</div>
+                <div></div>
+              </div>
+              <div class="pb-5 flex grid grid-cols-3">
+                <div></div>
+                <div class="emailInvites"><textarea name="invites" id="" placeholder="Enter email adresses to invite people:" cols="45" rows="10"></textarea></div>
+                <div></div>
+              </div>
 
-                <div></div>
-              </div>
-              <!-- <div class=" flex grid grid-cols-3">
-                <div class=""><a href="/"><button class="cancelButton bg-transparent border-black text-blue-700 font-semibold  py-2 px-4 border border-black-500 rounded">Cancel</button></a></div>
-                <div class=""></div>
-                <div class=""><a href="/event"><button class="createButton bg-transparent border-black text-blue-700 font-semibold  py-2 px-4 border border-black-500 rounded">Create</button></a></div>
-              </div> -->
             </div>
           </div>
-          <!-- /End replace -->
         </div>
       </main>
 </template>
@@ -38,6 +38,29 @@
 </script>
 
 <style scoped>
+
+textarea{
+  resize: none;
+}
+
+.emailInvites{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.or{
+  text-align: center;
+  font-size: 38px;
+  
+}
+
+.border{
+  border: 2px solid black;
+  width: 50%;
+  margin-left: auto ;
+  margin-right: auto;
+  background-color: rgba(128, 128, 128, 0.43);
+}
 
 .attachments{
   width: 90%;
