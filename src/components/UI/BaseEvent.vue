@@ -26,8 +26,12 @@
               </svg><span class="">Edit event settings</span>
             </a>
           </div>
+          <div class="Buttons">
+            <a href="/InvitePeople"><p class="shareEventSmall">Invite people...</p></a><br>
+            <a href="/Guestlist"><button class="GuestlistSmall">See Guestlist</button></a>
+          </div>
           <div>
-            <a href="/InvitePeople"><p class="shareEventSmall">Invite people...</p></a>
+    
           </div>
         </div>
 
@@ -42,9 +46,12 @@
           </div>
         </div>
 
-        <div class="lg:col-span-2 xl:col-span-2  divide-y textColor">
+        <div class="Share lg:col-span-2 xl:col-span-2  divide-y textColor">
           <div>
             <a href="/InvitePeople"><p class="shareEvent">Invite people...</p></a>
+          </div>
+          <div>
+            <a href="/Guestlist"><button class="Guestlist">See Guestlist</button></a>
           </div>
         </div>
 
@@ -72,13 +79,34 @@ export default defineComponent({
 
 <style scoped>
 
+.Buttons{
+  height: fit-content;
+  display: block;
+
+}
+
 .editSettings a{
-  width: 20rem;
+  width: 10rem;
   white-space: nowrap ;
   display: flex;
+  z-index: 4;
 }
 .editSettings{
   width: 20rem;
+}
+
+.Guestlist{
+  border: 2px solid black;
+  padding: 0.5rem;
+  border-radius: 8px;
+  float: right;
+  margin-top: 2rem;
+}
+
+.GuestlistSmall{
+  border: 2px solid black;
+  padding: 0.5rem;
+  border-radius: 8px;
 }
 
 .sideTitle{
@@ -99,6 +127,34 @@ a{
 @media only screen and (max-width: 1024px) {
   .sideTitle1 {
     margin-left: 10vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .Guestlist {
+    float: right;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .Guestlist {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .GuestlistSmall {
+    display: flex;
+    margin-top: 2rem;
+    float: right;
+    z-index: 1;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .GuestlistSmall {
+    display: none;
   }
 }
 

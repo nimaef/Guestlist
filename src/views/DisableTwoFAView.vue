@@ -20,7 +20,7 @@
     <div class="py-10">
       <header>
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900">2 Factor Authentication</h1>
+          <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900">Privacy and Security </h1>
         </div>
       </header>
       <main>
@@ -30,23 +30,13 @@
             <div class=" h-96 rounded-lg border-4 border-dashed border-gray-200">
               <div class="grid grid-cols-3">  
                 <div></div>
-                <p class="optionText">enter your 2FA code</p>
+                <div class="title"><p>You have succesfully disabled 2 Factor Authentication!</p></div>
                 <div></div>
               </div>
               <div class="grid grid-cols-3">  
                 <div></div>
-                <div class="twoFacAuthInput"><input class="alignCenter" type="text" placeholder="2FA code:"></div>
-                <div></div>
-               
-                <div class="optionText"></div>
-              </div>
-              <div class="grid grid-cols-6">  
-                <div></div>
-                <div></div>
-                <p class="optionText1"><a href="/privAndSecSettings"><button class="enableButton">Cancel</button></a></p>
-
-                <div class="optionText1"><a href="/privAndSecSettings"><button class="enableButton">Enable</button></a></div>
-                <div class="optionText"></div>
+                <div class=" optionText1"><a href="/PrivAndSecSettings"><button class="enableButton">Done</button></a></div>
+                <div class=""></div>
               </div>
             </div>
           </div>
@@ -111,14 +101,16 @@ export default {
 
 <style scoped>
 
-.alignCenter{
-  text-align: center;
+.button{
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.twoFacAuthInput{
-margin-top: 3rem;
-color: black;
-text-align: center;
+.title{
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .enableButton{
@@ -126,6 +118,8 @@ text-align: center;
   border: 2px  solid black;
   border-radius: 8px;
   padding: 0.2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .enableButton:hover {
@@ -136,7 +130,7 @@ text-align: center;
   color: black;
   margin-top: 2rem;
   font-size: 28px;
-  text-align: center;
+  width: 180%;
 }
 
 .optionText1{

@@ -16,6 +16,7 @@ import NewEventView from '../views/NewEventView.vue'
 import twoFacAuthView from '../views/twoFacAuthView.vue'
 import EditEventSettings from '../views/EditEventSettings.vue'
 import InvitePeople from '../views/InvitePeopleView.vue'
+import DisableTwoFAView from '../views/DisableTwoFAView.vue'
 import { data } from 'autoprefixer'
 
 const router = createRouter({
@@ -100,6 +101,11 @@ const router = createRouter({
       path: '/InvitePeople',
       name: 'InvitePeople',
       component: InvitePeople
+    },
+    {
+      path: '/Disable2fa',
+      name: 'Disable2fa',
+      component: DisableTwoFAView
     },
 
   ]

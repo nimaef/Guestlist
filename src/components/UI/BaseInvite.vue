@@ -23,10 +23,51 @@
               </div>
               <div class="pb-5 flex grid grid-cols-3">
                 <div></div>
-                <div class="emailInvites"><textarea name="invites" id="" placeholder="Enter email adresses to invite people:" cols="45" rows="10"></textarea></div>
+                <div class="emailInvites"><textarea class="emailArea" name="invites" id="" placeholder="Enter email adresses to invite people:"></textarea></div>
                 <div></div>
               </div>
-
+              <div class="pb-5 flex grid grid-cols-3">
+                <div></div>
+                <div class="moreEmails"><p>To invite more people at once, seperate the e-mail adresses with a comma.</p></div>
+                <div></div>
+              </div>
+              <div class="pb-5 flex grid grid-cols-3">
+                <div></div>
+                <div class="moreEmails1"><p>You can also copy the link below and send it to guests.</p></div>
+                <div></div>
+              </div>
+              <div class="pb-5 flex grid grid-cols-3">
+                <div></div>
+                <div class="inviteLink"><p>www.examplelink.com/eventlink</p></div>
+                <div></div>
+              </div>
+              <div class="pb-5 flex grid grid-cols-3">
+                <div></div>
+                <div class="moreEmails1"><p>Give a label to the people you want to invite.</p></div>
+                <div></div>
+              </div>
+              <div class="pb-5 flex grid grid-cols-3">
+                <div></div>
+                <div class="moreEmails">
+                  <div>
+                        <label for="location" class="block text-sm font-medium text-gray-700"></label>
+                        <select id="location" name="location" class="mt-1 block w-full rounded-md border-gray-300 mb-10 pt-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                                 <!--#region main  -->
+                                <option selected>select label</option>
+                                <option >label 1</option>
+                                <option >label 2</option>
+                                <option >label 3</option>
+                                <!--#endregion -->
+                        </select>
+                </div>
+                </div>
+                <div></div>
+              </div>
+              <div class="pb-5 flex grid grid-cols-3">
+                <div></div>
+                <div></div>
+                <div class=""><a href="/event"><button class="donebutton">done</button></a></div>
+              </div>
             </div>
           </div>
         </div>
@@ -39,8 +80,44 @@
 
 <style scoped>
 
+.donebutton{
+  color: black;
+  border: 2px  solid black;
+  border-radius: 8px;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-right: 1rem;
+  font-size: 20px;
+  float: right;
+  width: 20%;
+}
+
+.inviteLink{
+  border: none;
+  background-color: rgba(128, 128, 128, 0.423);
+  text-align: center;
+  padding: 1rem;
+}
+
 textarea{
   resize: none;
+}
+
+.moreEmails{
+  text-align: center;
+}
+
+.moreEmails1{
+  text-align: center;
+  margin-top: 3rem;
+  
+}
+
+.emailArea{
+  width: 20rem;
+  height: 15rem;
 }
 
 .emailInvites{

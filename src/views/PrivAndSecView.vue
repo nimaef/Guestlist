@@ -47,8 +47,9 @@
                 <p class="optionText1">Enable 2 Factor Auth?</p>
                 <div></div>
                 <div class="optionText1"><input class="radioButton" type="checkbox" value="Everyone"><a href="/2fa"><button class="enableButton">Enable</button></a></div>
-                <div class="optionText"></div>
+                <div class="optionText1"><a href="/Disable2fa"><button class="enableButton">Disable</button></a></div>
               </div>
+              
             </div>
           </div>
           <!-- /End replace -->
