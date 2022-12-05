@@ -20,7 +20,7 @@
       <div class="py-10">
       <header>
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900">Guestlist</h1>
+          <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900">Guest Settings</h1>
         </div>
       </header>
       <main>
@@ -28,19 +28,15 @@
           <!-- Replace with your content -->
           <div class="px-4 py-8 sm:px-0">
             <div class="place-content-center border-t-4 border-top border-neutral-900">
-              <div class=" topItems">
-                <div class="grid grid-cols-5">
-                        <div>Guest</div>
-                        <div class="topLabel">Label</div>
-                        <div class="checked">Checked in ?</div>
-                        <div>Setting</div>
-                        <div>Delete</div>
+              <div class=""  v-for="(guest) in guests.slice(0,1)">
+                <div class="grid grid-cols-2">
+                        <div class="leftSide">
+                          <p class="leftText">{{guest.name}}</p>
+                        </div>
+                        <div class="rightSide"></div>
                 </div>
         </div>
-        
-            <BaseGuestCard v-for="(guest, index) in guests" @deleteRow="deleteGuest(index)" :index="index" :guest="guest" @onCheck="checkGuest($event, index)"></BaseGuestCard>
-
-              
+ 
                         
               <div class="flex grid grid-cols-6">
                 <div class=""></div>
@@ -130,24 +126,6 @@ export default {
           checkedIn: false,
           id: 3
         },
-        {
-          name: 'Gast4',
-          label: 'labeltje',
-          checkedIn: false,
-          id: 4
-        },
-        {
-          name: 'Gast5',
-          label: 'labeltje',
-          checkedIn: false,
-          id: 5
-        },
-        {
-          name: 'Gast6',
-          label: 'labeltje',
-          checkedIn: false,
-          id: 6
-        },
       ],
     }
   },
@@ -173,13 +151,18 @@ export default {
 
 <style scoped>
 
-.cardScroll{
-  height: 10rem;
+.leftSide{
+  text-align: center;
+  font-size: 38px;
 }
 
-.content{
-  height: 10rem;
-  overflow: auto;
+.leftText{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.rightSide{
+  text-align: center;
 }
 
 .topLabel{

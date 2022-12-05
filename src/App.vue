@@ -12,7 +12,11 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style> 
 
-a{
+body{
+        color: black;
+}
+
+div{
         color: black;
 }
 

@@ -18,6 +18,7 @@ import EditEventSettings from '../views/EditEventSettings.vue'
 import InvitePeople from '../views/InvitePeopleView.vue'
 import DisableTwoFAView from '../views/DisableTwoFAView.vue'
 import GuestlistView from '../views/GuestListView.vue'
+import GuestSettingsView from '../views/GuestSettingsView.vue'
 import { data } from 'autoprefixer'
 
 const router = createRouter({
@@ -112,6 +113,11 @@ const router = createRouter({
       path: '/Guestlist',
       name: 'Guestlist',
       component: GuestlistView
+    },
+    {
+      path: '/guestSettings',
+      name: 'guestSettings',
+      component: GuestSettingsView
     },
 
   ]
