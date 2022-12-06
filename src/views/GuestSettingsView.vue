@@ -29,22 +29,35 @@
           <div class="px-4 py-8 sm:px-0">
             <div class="place-content-center border-t-4 border-top border-neutral-900">
               <div class=""  v-for="(guest) in guests.slice(0,1)">
-                <div class="grid grid-cols-2">
-                        <div class="leftSide">
-                          <p class="leftText">{{guest.name}}</p>
-                        </div>
-                        <div class="rightSide"></div>
+                <div class="grid">
+                  <div class="GuestName">
+                    <p class="">{{guest.name}}</p>
+                  </div>
+                  <div class="rightSide">
+                    <p>Select the Label you want to give this guest.</p>
+                    <div>
+                      <label for="location" class="block text-sm font-medium text-gray-700"></label>
+                      <select id="location" name="location" class="selector mt-1 block w-full rounded-md border-gray-300 mb-10 pt-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                        <!--#region main  -->
+                        <option selected>select label</option>
+                        <option >{{labels.at(0)}}</option>
+                        <option >{{labels.at(1)}}</option>
+                        <option >{{labels.at(2)}}</option>
+                        <!--#endregion -->
+                      </select>
+                    </div>
+                  </div>
                 </div>
-        </div>
+              </div>
  
                         
-              <div class="flex grid grid-cols-6">
+              <div class="rightSide">
                 <div class=""></div>
                 <div class=""></div>
                 <div class=" "></div>
                 <div class=" "></div>
                 <div></div>
-                <div class=""><a href="/event"><button class="editButton bg-transparent border-black text-blue-700 font-semibold  py-2 px-4 border border-black-500 rounded">Done</button></a></div>
+                <div class=""><a href="/Guestlist"><button class="editButton bg-transparent border-black  font-semibold  py-2 px-4 border border-black-500 rounded">Done</button></a></div>
               </div>
             </div>
           </div>
@@ -127,6 +140,8 @@ export default {
           id: 3
         },
       ],
+
+      labels: ['VIP', 'Label', 'Labeltje']
     }
   },
 
@@ -151,9 +166,17 @@ export default {
 
 <style scoped>
 
-.leftSide{
+.GuestName{
   text-align: center;
   font-size: 38px;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.selector{
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .leftText{
@@ -166,24 +189,24 @@ export default {
 }
 
 .topLabel{
-        margin-left: 25px;
+  margin-left: 25px;
 }
 
 .checked{
-        font-size: 16px;
-        text-align: center;
+  font-size: 16px;
+  text-align: center;
 }
 
 .topItems{
-        margin-left: 5%;
-        margin-right: 5%;
-        font-size: 16px;
-        text-align: center;
-        color: black;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 16px;
+  text-align: center;
+  color: black;
 }
 
 .TSize{
-        font-size: 28px;
+  font-size: 28px;
 }
 
 .profile{
@@ -223,7 +246,7 @@ export default {
 .editButton{
   color: black;
   margin-top: 2.5rem;
-  margin-left: 20%;
+
   width: 50%;
 }
 

@@ -59,7 +59,7 @@
                                 <option >label 3</option>
                                 <!--#endregion -->
                         </select>
-                </div>
+                  </div>
                 </div>
                 <div></div>
               </div>
