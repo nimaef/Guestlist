@@ -142,6 +142,18 @@ export default {
       logoSrc: null,
       splashSrc: null,
 
+      eventData: {
+        images: '',
+        location: '',
+        date: '',
+        description: '',
+        attachments: '',
+        ticketsPerGuest: 0,
+        pricePerTicket: 0,
+        maxGuests: 0,
+        determineJoined: true,
+      },
+
     }
   },
   methods: {
