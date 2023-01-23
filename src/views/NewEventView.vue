@@ -34,9 +34,9 @@
                 <div class="floatRight">* = Required to create an event</div>
               </div>
               <div class="pb-20 flex grid grid-cols-3">
-                <div class="LogoInput">Upload Logo:*<input class="" accept="image/png, image/gif, image/jpeg" type="file" @change="previewLogo"></div>
+                <div  class="LogoInput">Upload Logo:*<input class="" :value="eventData.logo" accept="image/png, image/gif, image/jpeg" type="file" @change="previewLogo"></div>
                 <div></div>
-                <div class="LogoInput">Upload Splash image:*<input class="" accept="image/png, image/gif, image/jpeg" type="file" @change="previewSplash"></div>
+                <div class="LogoInput">Upload Splash image:*<input class="" :value="eventData.images" accept="image/png, image/gif, image/jpeg" type="file" @change="previewSplash"></div>
                 <div class="">
                   <img v-if="logoSrc" class="additonalImages preview" :src="logoSrc" />
                 </div>
@@ -56,14 +56,13 @@
                 </div>
                 </div>
               </div>
-
             </div>
           </div>
           <!-- /End replace -->
         </div>
       </main>
 
-      <BaseEventLocation></BaseEventLocation>
+      <BaseEventLocation v-model="eventData.location"></BaseEventLocation>
 
       <BaseEventDate></BaseEventDate>
 
@@ -129,6 +128,11 @@ export default {
     DialogTitle,
     DialogDescription,
   },
+
+  props: {
+    eventData
+  },
+
   data() {
     return {
       user:  {
@@ -143,6 +147,7 @@ export default {
       splashSrc: null,
 
       eventData: {
+        logo: '',
         images: '',
         location: '',
         date: '',
